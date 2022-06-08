@@ -6,6 +6,9 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+
+
+
 a {
   color: inherit;
   text-decoration: none;
@@ -13,4 +16,51 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+.hljs-keyword{
+  color: #d272ff;
+}
+.hljs-comment{
+  color: #717aa8;
+}
+.hljs-string {
+  color: #23f0c3;
+}
+.hljs-title.class_ {
+  color: #ff7595;
+}
+.hljs-title.function_ {
+  color: #d272ff;
+}
+.hljs-property {
+  color: #c5cae8;
+}
+.hljs-attr {
+  color: #8d93b9;
+}
+
+.mini-code-tabs-scroll {
+  overflow-x: scroll;
+  border-bottom: 1px solid rgb(43, 51, 90);
+}
+.mini-code-tabs-scroll::-webkit-scrollbar{
+  display: none;
+}
+.mini-code-tabs-scroll::-webkit-scrollbar-thumb{
+  display: none;
+}
+
+.min-code-content {
+  overflow-x: scroll;
+}
+.min-code-content::-webkit-scrollbar{
+  height: 2px;
+  background: transparent;
+  width: 0px;
+}
+.min-code-content::-webkit-scrollbar-thumb{
+  background: rgb(43, 51, 90);
+  border-radius: 2px;
 }
