@@ -24,7 +24,7 @@ function Section1() {
                     <ParagraphText>
                     WorkOS is a set of building blocks for quickly adding enterprise features to your app. You’ll be shipping quickly with a market-proven solution for your customers.
                     </ParagraphText>
-                    <chakra.div marginTop="12px" width="80%" >
+                    <chakra.div marginTop="12px" width="80%" maxWidth="400px" >
                         <BasicRoundButton>
                             Add Single Sign-On to your app
                         </BasicRoundButton>

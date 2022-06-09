@@ -7,6 +7,7 @@ import Image from 'next/image'
 import MiniCodeEditor from '../../../components/Containers/MiniCodeEditor'
 import FeaturesContainer2, { svg_icon_type } from '../../../components/Cards/FeaturesContainer2'
 import FakeResponse from '../../../components/Containers/FakeResponse'
+import ChipAnimation from '../../../components/ChipAnimation'
 
 interface c {
     content: string,
@@ -87,6 +88,9 @@ function MoreDetailsSection() {
                         <FakeResponse/>
                 </GridItem>
             </Grid>
+            <Flex width="100vw" marginTop={{base: "-60px"}}  >
+            <ChipAnimation/>
+            </Flex>
             
             
         </Flex>

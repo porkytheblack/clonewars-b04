@@ -6,7 +6,7 @@ import { FlexRowCenterBetween } from '../../utils/FlexConfigs'
 
 function TopNav() {
   return (
-    <Flex {...FlexRowCenterBetween} width="100vw" padding={["18px 28px", "18px 28px", "18px 28px", "18px 0px", "24px 28px"]} >
+    <Flex {...FlexRowCenterBetween} width="100vw" padding={["18px 28px", "18px 28px", "18px 28px", "18px 28px", "24px 28px"]} >
         <Logo/>
         <MobileHamburgerButton/>
     </Flex>
