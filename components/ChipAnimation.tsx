@@ -12,17 +12,30 @@ const ChakraDiv = chakra(motion.div, {
 
 function ChipAnimation() {
 
-    const [isSm,isMd, isLg] = useMediaQuery(["(max-width: 479px)","(max-width: 768px)", "min-width: 991px"])
-
+    const [isLg] = useMediaQuery(["(min-width: 991px)"])
+    const[base, md, lg] = useMediaQuery(["(max-width: 479px)", "(max-width: 767px)", "max-width: 991px"])
+    
   return (
-    <Flex overflowX="hidden" overflowY="scroll" width="100vw" height="100%" position="relative" bg="#030527" {...FlexColCenterStart}  >
+    <Flex overflowX="hidden" overflowY="hidden" width="100vw" height="100%" position="relative" bg="#030527" {...FlexColCenterStart}  >
       
       <Flex overflow="hidden"  
       
       position={"relative"}
       height="auto"  {...FlexRowCenterCenter} >
 
-      {isLg && <ChakraDiv width="270px" left="406px" animate={{
+      {isLg && <motion.div 
+
+        style={{
+          width: "270px",
+          left: "406px",
+          position: "absolute",
+          zIndex: 3,
+          top: "66px",
+          height: "260px",
+          backgroundImage: "linear-gradient(0deg, #23f0c3, rgba(35, 240, 195, .23) 57%, rgba(35, 240, 195, 0))"
+        }}
+      
+      animate={{
         y: ["-100%", "0%", "0%", "0%"]
       }} transition={{
         duration: 6,
@@ -30,7 +43,7 @@ function ChipAnimation() {
         repeat: Infinity,
         ease: [.31, -0.01, .55, .99],
 
-      }} position="absolute" zIndex={3} top="66px"   height="260px" backgroundImage={"linear-gradient(0deg, #23f0c3, rgba(35, 240, 195, .23) 57%, rgba(35, 240, 195, 0));"} ></ChakraDiv>}
+      }} ></motion.div>}
 
 
           <Flex  width="859px" height="477px" zIndex={4} >
@@ -117,7 +130,7 @@ function ChipAnimation() {
                 zIndex: 4
               }} width="728px" height="234px" />
               {/* looping */}
-              <Flex position={"absolute"} zIndex="3" top="0" left={{lg: "29.5%", base: "15%", md: "15%"}}  >
+              <Flex position={"absolute"} zIndex="3" {...FlexColCenterStart}  overflow="hidden" top="0"   >
                 <Image style={{
                   zIndex: 3,
                   position: "absolute",
@@ -125,15 +138,27 @@ function ChipAnimation() {
               </Flex>
               
               {/* looper */}
-              {isLg && <ChakraDiv animate={{
+              {isLg && <motion.div animate={{
                 y: ["0%", "400%", "400%", "400%"]
-              }} transition={{
+              
+              }}  
+
+              transition={{
                 duration: 6,
-                delay: 1.15,
+                delay: 0.115,
                 repeat: Infinity,
-                ease: [.31, -0.01, .55, .99]
-              }} position={"absolute"} zIndex={2} width="728px" top="-24%" left="29.5%"  height="30%" 
-              backgroundImage={"linear-gradient(0deg, #23f0c3, rgba(35, 240, 195, .23) 57%, rgba(35, 240, 195, 0));"} 
+                ease: [.31, -0.01, .55, .99],
+        
+              }} 
+              style={{
+                position: "absolute",
+                zIndex: 2,
+                width: "600px",
+                top: "-24px",
+                height:"30%",
+                backgroundImage: "linear-gradient(0deg, #23f0c3, rgba(35, 240, 195, .23) 57%, rgba(35, 240, 195, 0))"
+              }} 
+
               />}
 
               <Flex position="absolute" top="0" left="0" bg="#13243a" zIndex={1} ></Flex>

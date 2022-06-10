@@ -83,7 +83,7 @@ function MoreDetailsSection() {
                             }
                         </Grid>
                 </GridItem>
-                <GridItem padding={"64px 15px"} width="100%"  display="flex" flexDir={"column"} alignItems="center" justifyContent={"flex-start"} >
+                <GridItem padding={"64px 15px"} style={{transformStyle: "preserve-3d", perspective: "1400px"}} width="100%"  display="flex" flexDir={"column"} alignItems="center" justifyContent={"flex-start"} >
                         <MiniCodeEditor/>
                         <FakeResponse/>
                 </GridItem>

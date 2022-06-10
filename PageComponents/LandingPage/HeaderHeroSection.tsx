@@ -1,4 +1,5 @@
-import { Flex, chakra, keyframes, Grid, GridItem } from '@chakra-ui/react'
+import { Flex, chakra, keyframes, Grid, GridItem, useMediaQuery } from '@chakra-ui/react'
+import Image from 'next/image'
 import React from 'react'
 import BasicRoundButton from '../../components/Buttons/BasicRoundButton'
 import PlainRightIconButton from '../../components/Buttons/PlainRightIconButton'
@@ -15,6 +16,7 @@ const introGradient = keyframes`
     }
 `
 function HeaderHeroSection() {
+    const [isMobile] = useMediaQuery(["(max-width: 768px)"])
   return (
     <Flex {...FlexColStartStart} width="100vw" marginBottom={{base: "64px", md: "112px"}}  padding={["44px 28px"]}  >
         <Flex marginBottom={{base: "0px", md: "112px"}} width={{base: "100%", md: "50%"}}  {...FlexColStartStart}  >
@@ -39,6 +41,9 @@ function HeaderHeroSection() {
                     Contact Sales
                 </PlainRightIconButton>
             </Flex>
+            {!isMobile && <Flex width="50%"  position="absolute"  right="0px" top="0px" >
+                <Image src="/assets/desktop/hero_image.jpg" width="1000px" height={"1000px"} />
+            </Flex>}
          </Flex>
         
         <chakra.h4 color="#656B8A" textTransform={"uppercase"} fontSize="20px" >

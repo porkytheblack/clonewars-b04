@@ -4,7 +4,7 @@ interface ScrollValue {
     scrollY: number
 }
 
-const ScrollContext = React.createContext<ScrollValue>({ scrollY: 0 })
+export const ScrollContext = React.createContext<ScrollValue>({ scrollY: 0 })
 
 function ScrollObserver({children}: {children: ReactNode}) {
     const [scrollY, setScrollY] = React.useState(0)
