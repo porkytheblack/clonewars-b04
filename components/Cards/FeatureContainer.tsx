@@ -10,7 +10,7 @@ function FeatureContainer({src, heading, content, custom_src}: {src?: feature_im
       <GridItem>
         <Flex {...FlexRowCenterStart} width="100%" color="rgb(41, 54, 61)" fontSize="14px" fontWeight="400" >
             <Flex {...FlexColCenterCenter} width="120px" height="120px" borderRadius="36px" backgroundColor="white" backgroundImage="linear-gradient(180deg,#fcfcfd,#f2f2f8)" marginRight="26px"  >
-                <Image src={ typeof src !== "undefined" ? `/assets/IconImages/${src}.png` : typeof custom_src !== "undefined" ? custom_src : ""} width="120px" loading='lazy'  height="120px" />
+                <Image alt="feature_svg" src={ typeof src !== "undefined" ? `/assets/IconImages/${src}.png` : typeof custom_src !== "undefined" ? custom_src : ""} width="120px" loading='lazy'  height="120px" />
             </Flex>
             <Flex {...FlexColStartCenter} height="67px"  >
                 <chakra.h4 fontSize="16px" fontWeight="500" color="#6363f1" lineHeight="1.92" letterSpacing={"-0.16"} marginBottom="6px" >

@@ -9,7 +9,7 @@ function SvgLogoComponent({name, custom_dimensions, custom_src}: { custom_dimens
 
     return (
     <Flex maxWidth={["70px"]} maxHeight={["20px"]} >
-        <Image src={typeof name !== "undefined" ? `/svgs/CompanyLogos/${name}.svg` : typeof custom_src !== "undefined" ? custom_src : ""}  height={typeof custom_dimensions?.height !== "undefined"  ? custom_dimensions.height  :  30} width={ typeof custom_dimensions?.width !== "undefined" ? custom_dimensions.width : 70 }  alt={name} />
+        <Image alt={typeof name !== undefined ?  name : "svg_icon"} src={typeof name !== "undefined" ? `/svgs/CompanyLogos/${name}.svg` : typeof custom_src !== "undefined" ? custom_src : ""}  height={typeof custom_dimensions?.height !== "undefined"  ? custom_dimensions.height  :  30} width={ typeof custom_dimensions?.width !== "undefined" ? custom_dimensions.width : 70 }  />
     </Flex>
     
   )

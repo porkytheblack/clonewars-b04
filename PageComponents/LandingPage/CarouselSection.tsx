@@ -334,6 +334,7 @@ function CarouselSection() {
                         }}
                         position="absolute"
                         top="0px"
+                        key={index}
                     >
                         <Flex {...FlexColCenterBetween} padding={"16px"} margin="0px 25px" width="auto" height="auto"   >
                             <Flex padding="10px" >

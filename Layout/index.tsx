@@ -8,7 +8,7 @@ import TopNav from './TopNav'
 function Layout({children}: {children: ReactNode}) {
   return (
       <ScrollObserver>
-        <Flex {...FlexColCenterStart} >
+        <Flex overflowX={"hidden"} {...FlexColCenterStart} >
           <TopNav/>
         {children}
         <Footer/>

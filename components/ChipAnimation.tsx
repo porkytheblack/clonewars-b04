@@ -47,11 +47,11 @@ function ChipAnimation() {
 
 
           <Flex  width="859px" height="477px" zIndex={4} >
-            <Image src="/assets/desktop/circuit_top.png" width="859px" height="477px" />
+            <Image alt="desktop_circuit" src="/assets/desktop/circuit_top.png" width="859px" height="477px" />
           </Flex>
           
           <Flex position="absolute" top="0px" width="859px" height="477px" zIndex={3} >
-          <Image src="/assets/desktop/circuit_top_highlight.png"  width="859px" height="477px"  />
+          <Image alt="desktop circuit" src="/assets/desktop/circuit_top_highlight.png"  width="859px" height="477px"  />
           </Flex>
 
           <Flex width="100%" height="100%" position="absolute" top="0px" left="0px" bg="#13243a" ></Flex>
@@ -96,7 +96,7 @@ function ChipAnimation() {
             <motion.div transition={{
               duration: 6,
             }} animate={{opacity: isLg ?  [0.1, 1] : 0.1}} style={{width: "164px", height: "153px"}} >
-            <Image src="/assets/desktop/chip_logo.png" width="164px" height="153px" />
+            <Image alt="logo" src="/assets/desktop/chip_logo.png" width="164px" height="153px" />
             </motion.div>
             
             <chakra.h3 opacity={isLg ? 1 : 0.1} color="white" fontSize="36px" fontWeight="500"  >
@@ -126,7 +126,7 @@ function ChipAnimation() {
 
             
             <Flex overflow="hidden" marginLeft="-4px" width="100%" position="relative" {...FlexColCenterCenter} >
-              <Image src="/assets/desktop/circuit_bottom.png" style={{
+              <Image alt="bottom circuit" src="/assets/desktop/circuit_bottom.png" style={{
                 zIndex: 4
               }} width="728px" height="234px" />
               {/* looping */}
@@ -134,7 +134,7 @@ function ChipAnimation() {
                 <Image style={{
                   zIndex: 3,
                   position: "absolute",
-                }} src="/assets/desktop/circuit_bottom_highlight.png" width="728px" height="234px" />
+                }} alt="bottom_highlight" src="/assets/desktop/circuit_bottom_highlight.png" width="728px" height="234px" />
               </Flex>
               
               {/* looper */}
@@ -173,7 +173,7 @@ function ChipAnimation() {
                 <Flex {...FlexRowCenterCenter} marginBottom="10px" >
                   {["okta", "azure", "google", "saml", "onelogin", "adfs"].map((item, index) => (
                     <Flex {...FlexColCenterCenter} key={index} margin="0px 6px" bg="#1a1736" boxShadow="inset 0 0 0 1px rgb(228 239 244 / 6%)" padding="0px 26px" borderRadius="100px" >
-                      <Image src={`/svgs/CompanyLogos/${item}.svg`} width="74px" height="56px"  />
+                      <Image alt="company_logo" src={`/svgs/CompanyLogos/${item}.svg`} width="74px" height="56px"  />
                     </Flex>
                   ))}
                 </Flex>
@@ -183,7 +183,7 @@ function ChipAnimation() {
                 <Flex {...FlexRowCenterCenter} marginBottom="10px" >
                   {["bamboohr", "jumpcloud", "pingidentity", "openid", "duo" ].map((item, index) => (
                     <Flex {...FlexColCenterCenter} key={index} margin="0px 6px" bg="#1a1736" boxShadow="inset 0 0 0 1px rgb(228 239 244 / 6%)" padding="0px 26px" borderRadius="100px" >
-                      <Image src={`/svgs/CompanyLogos/${item}.svg`} width="74px" height="56px"  />
+                      <Image alt="company_logo" src={`/svgs/CompanyLogos/${item}.svg`} width="74px" height="56px"  />
                     </Flex>
                   ))}
                 </Flex>

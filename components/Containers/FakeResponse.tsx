@@ -64,7 +64,7 @@ function FakeResponse() {
       return () => {
         
       }
-    }, [,ContainerRef.current, scrollY])
+    }, [, scrollY, isMobile])
     
 
 
@@ -91,7 +91,7 @@ function FakeResponse() {
         <Flex {...FlexColStartStart} marginTop="16px" width="100%" >
             {json_string.map((line, index) => {
                 return(
-                    <chakra.p textAlign={"left"} dangerouslySetInnerHTML={{__html: hljs.highlight("json",line).value}} ></chakra.p>
+                    <chakra.p key={index} textAlign={"left"} dangerouslySetInnerHTML={{__html: hljs.highlight("json",line).value}} ></chakra.p>
                 )
             })}
         </Flex>
