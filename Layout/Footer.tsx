@@ -8,7 +8,7 @@ function Footer() {
     <Flex bg="#f9f9fb" width="100vw" padding="64px 28px" {...FlexColCenterStart} >
         <Grid width="100%" templateColumns={{base: "repeat(2, 1fr)", md: "30% auto auto auto auto"}} templateRows={{base: "100px auto auto ", md: "auto"}}  columnGap="56px" rowGap={"48px"}  >
             <GridItem colSpan={{base: 2, md: 1}} {...FlexColStartStart}  >
-                <Image src="/svgs/icons/workos.svg" width="56px" height="56px" />
+                <Image src="/svgs/icons/workos.svg" style={{opacity: "0.5"}} width="56px" height="56px" />
             </GridItem>
             {
                 [
@@ -70,9 +70,9 @@ function Footer() {
                 ©️ WorkOS, Inc. 
             </chakra.p>
             <Flex width="50%" {...FlexRowCenterAround}  >
-                <Image width="24px" height="24px" src="/svgs/icons/github.svg" />
-                <Image width="24px" height="24px" src="/svgs/icons/twitter.svg" />
-                <Image width="24px" height="24px" src="/svgs/icons/linkedin.svg" />
+                <Image width="24px" style={{opacity: "0.5"}} height="24px" src="/svgs/icons/github.svg" />
+                <Image width="24px" style={{opacity: "0.5"}} height="24px" src="/svgs/icons/twitter.svg" />
+                <Image width="24px" style={{opacity: "0.5"}} height="24px" src="/svgs/icons/linkedin.svg" />
             </Flex>
         </Flex>
     </Flex>

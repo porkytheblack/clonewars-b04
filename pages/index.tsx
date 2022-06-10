@@ -2,6 +2,7 @@ import { Flex } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import CarouselSection from '../PageComponents/LandingPage/CarouselSection'
 import FeaturesSection from '../PageComponents/LandingPage/FeaturesSection'
 import FrictionlessSection from '../PageComponents/LandingPage/FrictionlessSection'
 import HeaderHeroSection from '../PageComponents/LandingPage/HeaderHeroSection'
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
         <SyncSection/>
         <FrictionlessSection/>
         <WhyUsSection/>
+        <CarouselSection/>
     </Flex> 
   )
 }
